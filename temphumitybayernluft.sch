@@ -1,0 +1,190 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L temphumitybayernluft-rescue:SHT31-DIS-B2.5KS-SamacSys_Parts-temphumitybayernluft-rescue IC1
+U 1 1 5EAD4CB4
+P 5050 3100
+F 0 "IC1" H 5750 3365 50  0000 C CNN
+F 1 "SHT31-DIS-B2.5KS" H 5750 3274 50  0000 C CNN
+F 2 "KiCad ms library:SON50P250X250X100-9N-D" H 6300 3200 50  0001 L CNN
+F 3 "" H 6300 3100 50  0001 L CNN
+F 4 "SHT31-DIS-B2.5KS" H 6300 3000 50  0001 L CNN "Description"
+F 5 "1" H 6300 2900 50  0001 L CNN "Height"
+F 6 "403-SHT31-DIS-B" H 6300 2800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Sensirion/SHT31-DIS-B25kS?qs=y6ZabgHbY%252ByCkzTLGvP3Qw%3D%3D" H 6300 2700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Sensirion" H 6300 2600 50  0001 L CNN "Manufacturer_Name"
+F 9 "SHT31-DIS-B2.5KS" H 6300 2500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR05
+U 1 1 5EAD5933
+P 6750 3400
+F 0 "#PWR05" H 6750 3250 50  0001 C CNN
+F 1 "+3V3" H 6765 3573 50  0000 C CNN
+F 2 "" H 6750 3400 50  0001 C CNN
+F 3 "" H 6750 3400 50  0001 C CNN
+	1    6750 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5EAD5FA6
+P 5750 4050
+F 0 "#PWR03" H 5750 3800 50  0001 C CNN
+F 1 "GND" H 5755 3877 50  0000 C CNN
+F 2 "" H 5750 4050 50  0001 C CNN
+F 3 "" H 5750 4050 50  0001 C CNN
+	1    5750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5EAD7272
+P 6750 3100
+F 0 "#PWR04" H 6750 2850 50  0001 C CNN
+F 1 "GND" H 6755 2927 50  0000 C CNN
+F 2 "" H 6750 3100 50  0001 C CNN
+F 3 "" H 6750 3100 50  0001 C CNN
+	1    6750 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 3100 6600 3100
+Wire Wire Line
+	6450 3400 6600 3400
+Wire Wire Line
+	5750 3900 5750 4050
+Wire Wire Line
+	6450 3200 6600 3200
+Wire Wire Line
+	6600 3200 6600 3100
+Connection ~ 6600 3100
+Wire Wire Line
+	6600 3100 6450 3100
+$Comp
+L Device:C C1
+U 1 1 5EAD76CF
+P 6600 3550
+F 0 "C1" H 6715 3596 50  0000 L CNN
+F 1 "100nF" H 6715 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6638 3400 50  0001 C CNN
+F 3 "~" H 6600 3550 50  0001 C CNN
+	1    6600 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6600 3400
+Wire Wire Line
+	6600 3400 6750 3400
+Wire Wire Line
+	5750 3900 6600 3900
+Wire Wire Line
+	6600 3900 6600 3700
+Connection ~ 5750 3900
+Wire Wire Line
+	5050 3100 4500 3100
+Wire Wire Line
+	5050 3400 4500 3400
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 5EAD858C
+P 3900 3200
+F 0 "JP1" V 3946 3268 50  0000 L CNN
+F 1 "SolderJumper_3_Bridged12" V 3855 3268 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 3900 3200 50  0001 C CNN
+F 3 "~" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 3200 5050 3200
+$Comp
+L power:GND #PWR02
+U 1 1 5EAD9AD6
+P 3900 3550
+F 0 "#PWR02" H 3900 3300 50  0001 C CNN
+F 1 "GND" H 3905 3377 50  0000 C CNN
+F 2 "" H 3900 3550 50  0001 C CNN
+F 3 "" H 3900 3550 50  0001 C CNN
+	1    3900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3400 3900 3550
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5EADA34E
+P 3900 2850
+F 0 "#PWR01" H 3900 2700 50  0001 C CNN
+F 1 "+3V3" H 3915 3023 50  0000 C CNN
+F 2 "" H 3900 2850 50  0001 C CNN
+F 3 "" H 3900 2850 50  0001 C CNN
+	1    3900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3000 3900 2850
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5EADE44D
+P 4350 4150
+F 0 "#PWR0101" H 4350 4000 50  0001 C CNN
+F 1 "+3V3" H 4365 4323 50  0000 C CNN
+F 2 "" H 4350 4150 50  0001 C CNN
+F 3 "" H 4350 4150 50  0001 C CNN
+	1    4350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4300 4350 4150
+$Comp
+L power:GND #PWR0102
+U 1 1 5EAE0246
+P 4850 4150
+F 0 "#PWR0102" H 4850 3900 50  0001 C CNN
+F 1 "GND" H 4855 3977 50  0000 C CNN
+F 2 "" H 4850 4150 50  0001 C CNN
+F 3 "" H 4850 4150 50  0001 C CNN
+	1    4850 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 4300 4850 4150
+Text Label 4500 3100 0    50   ~ 0
+SDA
+Text Label 4500 3400 0    50   ~ 0
+SCL
+Wire Wire Line
+	4850 4400 5300 4400
+Text Label 5300 4400 2    50   ~ 0
+SCL
+Wire Wire Line
+	4350 4400 4000 4400
+Text Label 4150 4400 2    50   ~ 0
+SDA
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J1
+U 1 1 5EBAA228
+P 4550 4400
+F 0 "J1" H 4600 4717 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 4600 4626 50  0000 C CNN
+F 2 "KiCad ms library:PinHeader_2x05_P2.00mm_Vertical_SMD" H 4550 4400 50  0001 C CNN
+F 3 "~" H 4550 4400 50  0001 C CNN
+	1    4550 4400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
