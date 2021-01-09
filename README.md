@@ -8,4 +8,5 @@ The SHT31 was ordered at mouser: https://www.mouser.de/ProductDetail/403-SHT31-D
 as well as the header pins with 2mm pitch: https://www.mouser.de/ProductDetail/855-M22-2580546/
 
 The finished product can be seen here:
+
 ![soldered PCB](pcb.png)
